@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './side-menu.css'
 })
 export class SideMenu {
-   homeLable: string = 'home';
-   detailsLable: string = 'details';
-   messagesLable: string = 'messages';
-   version : number = 99;
+   homeLabel: string = 'Go to Home';
+   detailsLabel: string = 'Go to Details';
+   messagesLabel: string = 'Go to Messages';
+   version : number = 101;
 }

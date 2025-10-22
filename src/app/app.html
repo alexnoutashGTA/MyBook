@@ -1,1 +1,9 @@
-<app-side-menu></app-side-menu>
+
+<body class="main_app_frame">
+  <div id="child1">
+    <app-side-menu [title]="sideMenuTitle" (menuClicked)="menuItemClicked($event)"></app-side-menu>
+  </div>
+  <div id="child2" class="main-body" >
+    <router-outlet />
+  </div>
+</body>

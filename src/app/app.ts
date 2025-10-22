@@ -1,14 +1,33 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {SideMenu} from './side-menu/side-menu';
+import  {Component, Input, OnInit} from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
+import {filter} from 'rxjs';
+declare var gtag: Function; // Declare gtag to avoid TypeScript errors
 
 @Component({
   selector: 'app-root',
-  imports: [SideMenu],
   templateUrl: './app.html',
-  standalone: true,
-  styleUrl: './app.css'
+  standalone: false,
+  styleUrls: ['./app.css']
 })
 export class App {
-  protected readonly title = signal('MyBook');
+  protected title = 'MyBook';
+  breadCrumbTitle: string = 'Our Community App!';
+  sideMenuTitle: string = 'Our Community App!';
+
+  menuItemClicked($event: any) {
+    console.log($event)
+  }
+  constructor(private router: Router) {}
+
+
 }
+
+
+
+
+
+
+
+
+
+

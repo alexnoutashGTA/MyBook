@@ -1,11 +1,12 @@
-<nav id="sidenav">
-  <ul>
-    <li><a href="#"><i class="fa fa-home"></i><span>{{ service.homeLabel }}</span></a></li>
-    <li><a href="/messages.html"><i class="fa fa-envelope"></i><span>{{ service.messagesLabel }}</span></a></li>
-    <li><a href="/details.html"><i class="fa fa-cog"></i><span>{{ service.detailsLabel }}</span></a></li>
-  </ul>
 
-<div class="version">
-  <p>Version: {{service.version}}</p>
-</div>
+<div>
+  <p>{{title}}</p>
+  <nav id="sidenav" class="sidenav">
+  <ul>
+    <li (click)="linkClicked(i)" [id]="i" *ngFor="let link of linkList; index as i; " ><a [routerLink]="link">
+      <i class="fa fa-home"></i><span>{{ labelList[i] }}</span></a></li>
+  </ul>
 </nav>
+</div>
+
+

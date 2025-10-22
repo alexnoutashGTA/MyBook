@@ -1,0 +1,34 @@
+
+<div class="primeAssetArea">
+  <h1> MyBook – The Smarter Way for College Students to Connect, Share, and Thrive</h1>
+</div>
+<article class="home_page_main_area">
+  <section id="avatarSection">
+    <div class="avatar-container">
+      <div class="avatar" *ngFor="let item of imagesLinks; index as i; ">
+        <img [src]="item.url" [alt]="item.desc" (click)="imageClicked(item.studentId)">
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="buttons_row">
+      <button [ngStyle]="nextButtonStyle" (click)="leftButtonClicked()">Previous</button>
+      <button [ngStyle]="previousButtonStyle" (click)="rightButtonClicked()">Next</button>
+    </div>
+  </section>
+<section>
+  <div class="secondAssetArea">
+    <section>
+      <h3>{{llmTopic}}</h3>
+    </section>
+  </div>
+  <div class="secondAssetArea links">
+    <a href="/messages" title="Go to Messaging Page to Connect">💬 Go to Messages</a>
+    <a href="/detail" title="Go to your profile page">View Profile</a>
+    <a href="/faq" title="Go to faq page">Frequently Asked Questions</a>
+    <a href="/about-us" title="Go to your profile page">About US</a>
+  </div>
+</section>
+</article>
+
+

@@ -1,17 +1,38 @@
-import { Component } from '@angular/core';
-import {App} from '../app';
-import {MainService} from '../Services/main-service';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {MenuService} from '../services/menu-service';
 
 @Component({
   selector: 'app-side-menu',
-  imports: [],
+  standalone: false,
   templateUrl: './side-menu.html',
-  standalone: true,
-  styleUrl: './side-menu.css'
+  styleUrls: ['./side-menu.css']
 })
 export class SideMenu {
-  protected service: MainService;
-   constructor(private srvc:MainService) {
-      this.service=srvc;
-   }
+  @Input() title = ''; // decorate the property with @Input()
+  @Output() menuClicked = new EventEmitter();
+
+  homeLabel: String = "";
+  messagesLabel: String = "";
+  detailsLabel: String = "";
+  homelink: string = "";
+  messageLink: string ="";
+  detailLink: string = "";
+  linkList: string[] = [];
+  labelList: string[] = []
+
+
+  constructor(private serv: MenuService) {
+    this.homeLabel = serv.HomeLabel;
+    this.messagesLabel = serv.MessageLabel;
+    this.detailsLabel = serv.DetailedLabel;
+    this.homelink= serv.HomeLink;
+    this.messageLink=serv.MessageLink;
+    this.detailLink = serv.DetailsLink;
+    this.linkList=serv.LinksList;
+    this.labelList = serv.LabelList;
+  }
+
+  linkClicked(i: number) {
+    this.menuClicked.emit(i)
+  }
 }

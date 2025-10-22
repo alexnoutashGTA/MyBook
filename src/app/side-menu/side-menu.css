@@ -30,7 +30,9 @@
     }
   }
 
-  p{
+  .version{
+    margin-top: 500px;
     color: white;
+    margin-left: 50px;
   }
 }

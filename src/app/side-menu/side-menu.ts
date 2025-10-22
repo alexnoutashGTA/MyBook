@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {App} from '../app';
+import {MainService} from '../Services/main-service';
 
 @Component({
   selector: 'app-side-menu',
@@ -8,8 +10,8 @@ import { Component } from '@angular/core';
   styleUrl: './side-menu.css'
 })
 export class SideMenu {
-   homeLabel: string = 'Go to Home';
-   detailsLabel: string = 'Go to Details';
-   messagesLabel: string = 'Go to Messages';
-   version : number = 101;
+  protected service: MainService;
+   constructor(private srvc:MainService) {
+      this.service=srvc;
+   }
 }

@@ -14,9 +14,6 @@ export class SideMenu {
   homeLabel: String = "";
   messagesLabel: String = "";
   detailsLabel: String = "";
-  homelink: string = "";
-  messageLink: string ="";
-  detailLink: string = "";
   linkList: string[] = [];
   labelList: string[] = []
 

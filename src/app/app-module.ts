@@ -5,12 +5,12 @@ import { App } from './app';
 import { SideMenu } from './side-menu/side-menu';
 import { Home } from './home/home';
 import {BreadCrumbMenu} from './bread-crumb-menu/bread-crumb-menu';
-import { Profile } from './profile/profile';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AdsenseModule} from 'ng2-adsense';
 import {GoogleMapsModule} from '@angular/google-maps';
 import {ContentService} from './services/content-service';
 import {provideHttpClient} from '@angular/common/http';
+import { Faq } from './faq/faq';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import {provideHttpClient} from '@angular/common/http';
     App,
     SideMenu,
     Home,
-    Profile,
+    Faq,
   ],
   imports: [
     GoogleMapsModule,

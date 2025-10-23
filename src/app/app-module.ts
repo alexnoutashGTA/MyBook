@@ -11,6 +11,7 @@ import {GoogleMapsModule} from '@angular/google-maps';
 import {ContentService} from './services/content-service';
 import {provideHttpClient} from '@angular/common/http';
 import { Faq } from './faq/faq';
+import {AboutUs} from './about-us/about-us';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { Faq } from './faq/faq';
     SideMenu,
     Home,
     Faq,
+    AboutUs
   ],
   imports: [
     GoogleMapsModule,

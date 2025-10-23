@@ -9,7 +9,6 @@ import { Profile } from './profile/profile';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AdsenseModule} from 'ng2-adsense';
 import {GoogleMapsModule} from '@angular/google-maps';
-import { Login } from './login/login';
 import {ContentService} from './services/content-service';
 import {provideHttpClient} from '@angular/common/http';
 
@@ -20,7 +19,6 @@ import {provideHttpClient} from '@angular/common/http';
     SideMenu,
     Home,
     Profile,
-    Login,
   ],
   imports: [
     GoogleMapsModule,

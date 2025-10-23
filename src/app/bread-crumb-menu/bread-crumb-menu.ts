@@ -29,9 +29,6 @@ export class BreadCrumbMenu {
     this.homeLabel = serv.HomeLabel;
     this.messagesLabel = serv.MessageLabel;
     this.detailsLabel = serv.DetailedLabel;
-    this.homelink= serv.HomeLink;
-    this.messageLink=serv.MessageLink;
-    this.detailLink = serv.DetailsLink;
     this.linkList=serv.LinksList;
     this.labelList = serv.LabelList;
   }

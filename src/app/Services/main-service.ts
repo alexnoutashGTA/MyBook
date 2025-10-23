@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {messageObject} from "../messages/messageObject";
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +8,8 @@ export class MainService {
   ImagesLinks: { url: string; desc: string; studentId: string }[] = []
 
   HomePageNumber: number = 0;
+
+  messagesList: messageObject[] = [];
 
   siteName="My Book"
 
@@ -23,6 +26,11 @@ export class MainService {
     if (this.HomePageNumber > 0) {
       this.HomePageNumber -= 1;
     }
+  }
+
+  SaveAMessage(newMessage: messageObject) {
+    this.messagesList.push(newMessage);
+
   }
 
   constructor() {

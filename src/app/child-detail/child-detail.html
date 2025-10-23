@@ -1,0 +1,15 @@
+<div *ngFor="let item of detailLabel; index as ind" xmlns="http://www.w3.org/1999/html">
+<div *ngIf="buttonState()=='Edit'" class="infoLine">
+  <h3>{{item}}:-</h3><h5>{{detailValue[ind]}}</h5>
+</div>
+  <div *ngIf="buttonState()=='Edited'" class="infoLine">
+    <h3>{{item}}:-</h3><input class="infoline_input" type="text" [(ngModel)]="detailValue[ind]">
+  </div>
+</div>
+<br>
+<div class="infoLine_buttons">
+  <button *ngIf="buttonState()=='Edit'" (click)="buttonClicked('Edited')">Edit</button>
+  <button *ngIf="buttonState()!='Edit'" (click)="buttonClicked('Edit')">Cancel</button>
+  <button *ngIf="buttonState()!='Edit'" (click)="saveButtonClicked()">Save</button>
+</div>
+

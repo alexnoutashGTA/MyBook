@@ -1,0 +1,46 @@
+<div class="header">
+  <title>Our Community App</title>
+
+</div>
+<div class="main_app_frame">
+
+<h1>Start Messaging Here</h1>
+<div id="primeArea">
+  <div id="existingmessages" class="message-list">
+    <h2>Previous Messages</h2>
+    <div class="avatar" *ngFor="let item of messages; index as i">
+      <div class="header-line">
+        <strong>{{ item.userName }}</strong>
+        <span class="date">{{ item.dateTime }}</span>
+      </div>
+      <p>{{ item.message }}</p>
+    </div>
+  </div>
+
+  <div id="postnewmessage">
+    <div>
+        <form (ngSubmit)="onMessageSave()" [formGroup]="submitForm" class="message-form">
+  <div class="form-group">
+    <label aria-label="username label"  for="username">Username</label>
+    <input aria-label="username input" id="username" name="username" type="text" formControlName="userName" />
+  </div>
+
+  <div class="form-group">
+    <label aria-label="message label" for="message">Message</label>
+    <input aria-label="message input" id="message" name="message" type="text" formControlName="message"  />
+  </div>
+
+  <div class="form-group">
+    <label aria-label="date label" for="date">Date and Time</label>
+    <input aria-label="date input" id="date" name="date" type="date" formControlName="date" />
+  </div>
+<br>
+  <button aria-label="submit button" id="submit" name="submit" type="submit" class="submit-btn">Send Message</button>
+</form>
+    </div>
+    <div>
+  </div>
+  </div>
+</div>
+<app-lazy-footer></app-lazy-footer>
+</div>

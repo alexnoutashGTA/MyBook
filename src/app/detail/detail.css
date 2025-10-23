@@ -1,0 +1,18 @@
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  place-content: space-between;
+  padding: 2px;
+}
+
+.addressInfo{
+  width: 40%;
+padding: 10px;
+}
+
+.personalInfo{
+  width: 40%;
+padding: 10px;
+}

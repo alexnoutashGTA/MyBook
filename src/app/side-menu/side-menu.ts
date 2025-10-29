@@ -18,9 +18,9 @@ export class SideMenu {
 
 
   constructor() {
-    this.homeLabel =
-    this.messagesLabel = "";
-    this.detailsLabel = "";
+    this.homeLabel ="Go to Home"
+    this.messagesLabel = "Go to messages";
+    this.detailsLabel = "Go to details";
 
     this.linkList=[];
     this.labelList =[];

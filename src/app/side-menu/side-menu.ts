@@ -13,17 +13,11 @@ export class SideMenu {
   homeLabel: String = "";
   messagesLabel: String = "";
   detailsLabel: String = "";
-  linkList: string[] = [];
-  labelList: string[] = []
-
 
   constructor() {
-    this.homeLabel =
-    this.messagesLabel = "";
-    this.detailsLabel = "";
-
-    this.linkList=[];
-    this.labelList =[];
+    this.homeLabel = 'Home';
+    this.messagesLabel = "Go to Messages";
+    this.detailsLabel = "Go to Details";
   }
 
   linkClicked(i: number) {

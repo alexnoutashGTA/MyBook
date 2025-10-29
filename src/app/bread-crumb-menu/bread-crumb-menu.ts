@@ -1,5 +1,4 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {MenuService} from '../services/menu-service';
 
 
 @Component({
@@ -25,12 +24,12 @@ export class BreadCrumbMenu {
 
 
 
-  constructor(private serv: MenuService) {
-    this.homeLabel = serv.HomeLabel;
-    this.messagesLabel = serv.MessageLabel;
-    this.detailsLabel = serv.DetailedLabel;
-    this.linkList=serv.LinksList;
-    this.labelList = serv.LabelList;
+  constructor() {
+    this.homeLabel = "";
+    this.messagesLabel = "";
+    this.detailsLabel = "";
+    this.linkList= [];
+    this.labelList = [];
   }
 
   linkClicked(i: number) {

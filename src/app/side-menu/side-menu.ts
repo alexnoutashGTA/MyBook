@@ -1,9 +1,12 @@
 import {Component, Input, Output} from '@angular/core';
 import EventEmitter = require('node:events');
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-side-menu',
-  standalone: false,
+  imports: [
+    RouterLink
+  ],
   templateUrl: './side-menu.html',
   styleUrls: ['./side-menu.css']
 })

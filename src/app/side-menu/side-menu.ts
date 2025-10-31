@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {ContentService} from '../content-service';
 
 @Component({
   selector: 'app-side-menu',
@@ -14,10 +15,10 @@ export class SideMenu {
   messagesLabel: String = "";
   detailsLabel: String = "";
 
-  constructor() {
-    this.homeLabel = 'Home';
-    this.messagesLabel = "Go to Messages";
-    this.detailsLabel = "Go to Details";
+  constructor(localReferenceService : ContentService) {
+    this.homeLabel = localReferenceService.homeLabel;
+    this.messagesLabel = localReferenceService.messagesLabel
+    this.detailsLabel = localReferenceService.detailsLabel;
   }
 
   linkClicked(i: number) {

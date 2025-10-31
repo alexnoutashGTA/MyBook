@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {ContentService} from '../content-service';
 
 
 @Component({
@@ -14,24 +15,12 @@ export class BreadCrumbMenu {
   homeLabel: String = "";
   messagesLabel: String = "";
   detailsLabel: String = "";
-  homelink: string = "";
-  messageLink: string ="";
-  detailLink: string = "";
-  linkList: string[] = [];
-  labelList: string[] = []
 
-
-
-
-
-  constructor() {
-    this.homeLabel = "";
-    this.messagesLabel = "";
-    this.detailsLabel = "";
-    this.linkList= [];
-    this.labelList = [];
+  constructor(localReferenceService : ContentService) {
+    this.homeLabel = localReferenceService.homeLabel;
+    this.messagesLabel = localReferenceService.messagesLabel
+    this.detailsLabel = localReferenceService.detailsLabel;
   }
-
   linkClicked(i: number) {
     this.menuClicked.emit(i)
   }

@@ -6,12 +6,14 @@ import { SideMenu } from './side-menu/side-menu';
 import {BreadCrumbMenu} from './bread-crumb-menu/bread-crumb-menu';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {provideHttpClient} from '@angular/common/http';
+import { Messages } from './messages/messages';
 
 @NgModule({
   declarations: [
     BreadCrumbMenu,
     App,
     SideMenu,
+    Messages,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, Input, Output} from '@angular/core';
+import EventEmitter = require('node:events');
 
 @Component({
   selector: 'app-side-menu',
@@ -18,9 +19,5 @@ export class SideMenu {
     this.homeLabel = 'Home';
     this.messagesLabel = "Go to Messages";
     this.detailsLabel = "Go to Details";
-  }
-
-  linkClicked(i: number) {
-    this.menuClicked.emit(i)
   }
 }

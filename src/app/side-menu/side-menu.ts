@@ -1,5 +1,4 @@
-import {Component, Input, Output} from '@angular/core';
-import EventEmitter = require('node:events');
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {RouterLink} from '@angular/router';
 
 @Component({

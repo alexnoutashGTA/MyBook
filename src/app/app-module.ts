@@ -12,13 +12,12 @@ import { Messages } from './messages/messages';
   declarations: [
     BreadCrumbMenu,
     App,
-    SideMenu,
     Messages,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, ReactiveFormsModule,
+    FormsModule, ReactiveFormsModule, SideMenu,
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

@@ -31,25 +31,29 @@
     }
   }
 }
+
+/*Hide the bread crumb menu for very small screens*/
 @media only screen and (max-width: 640px) {
   .sidenav {
     display: none;
   }
-
 }
-/* Medium devices such as tablets (768px and up) */
+
+/*Hide the bread crumb menu for medium screens*/
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   .sidenav {
     display: none;
   }
 }
 
+/*Show the bread crumb menu for large screens*/
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .sidenav {
     display: block;
   }
 }
 
+/*Show the bread crumb menu for very large screens*/
 @media only screen and (min-width: 1281px) {
   .sidenav {
     display: block;

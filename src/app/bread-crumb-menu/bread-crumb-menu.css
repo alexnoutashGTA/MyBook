@@ -1,5 +1,5 @@
 .bread-crumb-list{
-  display: flex;
+  display: inline-block;
   flex-direction: row;
   background-color: #333;
   align-items: center;
@@ -35,10 +35,14 @@
     }
   }
 
+.bread-crumb{
+  color: purple;
+}
 
 /*Show the bread crumb menu for very small screens*/
 @media only screen and (max-width: 640px) {
   .bread-crumb {
+    /*Will take the full width of the screen. It will create a newline before and after*/
     display: block;
   }
 }

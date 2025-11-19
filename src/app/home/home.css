@@ -1,11 +1,28 @@
 .boxStyle {
+  position: static;
   color: red;
   margin: 10px;
   height: 150px;
   width: 150px;
   background-color: lightgrey;
-
 }
+
+.boxStyle3 {
+  position: fixed;
+  color: red;
+  margin: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+#parent{
+  position: static;
+  background-color: lightpink;
+}
+
+
 @media only screen and (max-width: 640px) {
 
 }

@@ -7,30 +7,18 @@
 
 }
 @media only screen and (max-width: 640px) {
- .hello {
-  display: flex;
-  flex-direction: column;
-}
+
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  .hello {
-    display: flex;
-    flex-direction: row;
-  }
+
 }
 /*Show the bread crumb menu for large screens*/
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
- .hello {
-  display: flex;
-  flex-direction: row;
-}
+
 }
 
 
 @media only screen and (min-width: 1281px) {
- .hello {
-  display: flex;
-  flex-direction: row;
-}
+
 }

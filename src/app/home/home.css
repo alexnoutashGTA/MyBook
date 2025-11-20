@@ -46,7 +46,7 @@
 #parent{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@
   #parent{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: auto;
     justify-content: center;
     align-items: center;

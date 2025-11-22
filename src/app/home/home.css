@@ -1,25 +1,28 @@
 .boxStyle {
-  position: static;
+  position: relative;
   color: red;
   margin: 10px;
   height: 150px;
   width: 150px;
   background-color: lightgrey;
+  display: inline-block;
 }
 
 .boxStyle3 {
-  position: fixed;
+  position: relative;
   color: red;
   margin: 10px;
   height: 150px;
   width: 150px;
   background-color: black;
   opacity: 0.7;
+  display: inline-block;
 }
 
 #parent{
-  position: static;
+  position: absolute;
   background-color: lightpink;
+  text-wrap-mode: nowrap;
 }
 
 

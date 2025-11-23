@@ -11,8 +11,8 @@ declare var gtag: Function; // Declare gtag to avoid TypeScript errors
 })
 export class App implements OnInit {
   protected title = 'MyBook';
-  breadCrumbTitle: string = 'Our Community App!';
-  sideMenuTitle: string = 'Our Community App!';
+  breadCrumbTitle: string = 'breadCrumbTitle';
+  sideMenuTitle: string = 'sideMenuTitle';
 
   menuItemClicked($event: any) {
     console.log($event)

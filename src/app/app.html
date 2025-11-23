@@ -1,10 +1,10 @@
 
 <body class="main_app_frame">
-  <div id="child1">
+  <div>
     <app-bread-crumb-menu [title]="breadCrumbTitle"></app-bread-crumb-menu>
     <app-side-menu [title]="sideMenuTitle" (menuClicked)="menuItemClicked($event)"></app-side-menu>
   </div>
-  <div id="child2" class="main-body" >
+  <div  class="main-body" >
     <router-outlet />
   </div>
 </body>

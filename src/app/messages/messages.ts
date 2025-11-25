@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-messages',
@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './messages.html',
   styleUrl: './messages.css',
 })
-export class Messages {
+export class Messages  {
+
+  saveMessage = (values: any) => {
+    console.log(values);
+  }
 
 }

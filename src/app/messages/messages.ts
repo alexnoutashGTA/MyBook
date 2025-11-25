@@ -8,8 +8,13 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 })
 export class Messages  {
 
-  saveMessage = (values: any) => {
-    console.log(values);
+  saveMessage = () => {
+    console.log(this.firstName+' '+this.lastName+' '+ this.phoneNumber+' '+ this.password);
   }
+
+  firstName: string ="";
+  lastName: string ="";
+  phoneNumber: string ="";
+  password: string="";
 
 }

@@ -3,24 +3,24 @@
 <form  (ngSubmit)="saveMessage()">
 <label for="firstname">*First Name</label>
 <br>
-<input type="text" placeholder="Enter firstname"  required [(ngModel)]="firstName">
+<input type="text" placeholder="Enter firstname" id="firstname" name="firstname" required [(ngModel)]="firstName">
 <br>
 <br>
 
 <label for="lastname">*Last Name</label>
 <br>
-<input type="text" placeholder="Enter lastname" required [(ngModel)]="lastName">
+<input type="text" placeholder="Enter lastname" id="lastname" name="lastname" required [(ngModel)]="lastName">
 <br>
 <br>
 
 <label for="phone number">Phone Number</label>
 <br>
-<input type="tel" placeholder="(***) ***-****" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" [(ngModel)]="phoneNumber">
+<input type="tel" placeholder="(***) ***-****" id="phonenumber" name="phonenumber" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" [(ngModel)]="phoneNumber">
 <br>
 <br>
   <label for="password">Password</label>
   <br>
-  <input id="password" type="password"  [(ngModel)]="password">
+  <input id="password" type="password"  name="password"  [(ngModel)]="password">
   <br>
   <br>
 <input type="submit" value="Send the message">

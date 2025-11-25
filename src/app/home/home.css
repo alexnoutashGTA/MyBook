@@ -1,44 +1,49 @@
 .boxStyle {
-  position: relative;
-  color: red;
-  margin: 10px;
-  height: 150px;
+  box-sizing: border-box;
   width: 150px;
-  background-color: lightgrey;
-  display: inline-block;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #ff0000;
+  flex: 0 1 150px;
+  min-width: 0;
 }
-
-.boxStyle3 {
-  position: relative;
-  color: red;
-  margin: 10px;
-  height: 150px;
-  width: 150px;
-  background-color: black;
-  opacity: 0.7;
-  display: inline-block;
-}
-
-#parent{
-  position: absolute;
-  background-color: lightpink;
-  text-wrap-mode: nowrap;
-}
-
 
 @media only screen and (max-width: 640px) {
-
+  .hello {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .boxStyle {
+    width: 90%;
+    max-width: 300px;
+  }
 }
 
-@media only screen and (min-width: 641px) and (max-width: 1024px) {
-
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hello {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .boxStyle {
+    width: 100%; /* fill the grid cell */
+    max-width: none;
+  }
 }
-/*Show the bread crumb menu for large screens*/
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 
-}
-
-
-@media only screen and (min-width: 1281px) {
-
+@media only screen and (min-width: 1025px) {
+  .hello {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .boxStyle {
+    flex: 0 1 150px;
+    width: 150px;}
 }

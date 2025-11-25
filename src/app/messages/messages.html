@@ -1,9 +1,15 @@
 <h1>Send a message</h1>
 
+<!-- /* Example of Function Binding */ -->
 <form  (ngSubmit)="saveMessage()">
-<label for="firstname">*First Name</label>
+
+<!--  <* Example of Interpolation Binding with double curly brackets (bind to a text value) *>-->
+  <!-- /* One way binding */ -->
+  <label for="firstname">{{firstNameLabel}}</label>
 <br>
-<input type="text" placeholder="Enter firstname" id="firstname" name="firstname" required [(ngModel)]="firstName">
+  <!-- /* Example of Model Binding with [()] (two way binding to a variable ) */ -->
+  <input type="text" placeholder="Enter firstname" id="firstname" name="firstname"
+       required [(ngModel)]="firstName">
 <br>
 <br>
 

@@ -16,5 +16,6 @@ export class Messages  {
   lastName: string ="";
   phoneNumber: string ="";
   password: string="";
+  firstNameLabel: string = "*First Name";
 
 }

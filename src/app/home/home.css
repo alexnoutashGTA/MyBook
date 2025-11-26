@@ -1,43 +1,42 @@
-.boxStyle {
-  box-sizing: border-box;
+.box{
+  height: 150px;
   width: 150px;
-  height: 100px;
-  display: flex;
+  background-color: pink;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  background: lightgray;
-  flex: 0 1 150px; /* allows shrinking when in flex containers */
-  min-width: 0;
+  margin: 20px auto;
 }
-
 /* small: 1 column centered */
 @media only screen and (max-width: 640px) {
-  .hello {
+  .container {
+    border: 1px dashed;
     display: grid;
+    grid-column: 1;
   }
 }
 
 /* medium: 2-column grid */
 @media (min-width: 641px) and (max-width: 1024px) {
-  .hello {
+  .container {
+    border: 1px dashed;
     display: grid;
+    grid-column: 2;
   }
 }
 
 /* large+: horizontal rows with wrapping */
-@media only screen and (min-width: 1025px) {
-  .hello {
+@media only screen and (min-width: 1025px) and (max-width: 1680px) {
+  .container {
+    border: 1px dashed;
     display: grid;
+    grid-row: 1;
   }
-  .boxStyle {
-    width: 90%;
-    max-width: 300px;
+}
+@media only screen and (min-width: 1281px) {
+  .container {
+    border: 1px dashed;
+    display: grid;
+    grid-row: 1;
   }
 }
 
-.container {
-  border: 1px dashed;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}

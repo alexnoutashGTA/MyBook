@@ -1,6 +1,10 @@
 .child {
   position: relative;
+<<<<<<< HEAD
   color: gray;
+=======
+  color: blue;
+>>>>>>> 9798a48 (My changes)
   margin: 10px;
   height: 150px;
   width: 150px;

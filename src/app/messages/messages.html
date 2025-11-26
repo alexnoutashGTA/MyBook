@@ -15,7 +15,8 @@
 
 <label for="lastname">*Last Name</label>
 <br>
-<input type="text" placeholder="Enter lastname" id="lastname" name="lastname" required [(ngModel)]="lastName">
+  <!-- /* Example of Attribute Binding with [] (one way binding to a variable ) */ -->
+  <input type="text" placeholder="Enter lastname" [id]="lastnameId" name="lastname" required [(ngModel)]="lastName">
 <br>
 <br>
 
@@ -29,5 +30,19 @@
   <input id="password" type="password"  name="password"  [(ngModel)]="password">
   <br>
   <br>
-<input type="submit" value="Send the message">
+
+  <label for="isActiveStudent">Is Student Active</label>
+  <br>
+  <input id="isActiveStudent" type="checkbox"  name="isActiveStudent"  [(ngModel)]="isActiveStudent">
+  <br>
+  <br>
+
+  <label for="dateOfBirth">Date of birth</label>
+  <br>
+  <input id="dateOfBirth" type="date"  name="dateOfBirth"  [(ngModel)]="dateOfBirth">
+  <br>
+  <br>
+
+
+  <input type="submit" value="Send the message">
 </form>

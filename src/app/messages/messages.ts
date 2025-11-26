@@ -17,5 +17,7 @@ export class Messages  {
   phoneNumber: string ="";
   password: string="";
   firstNameLabel: string = "*First Name";
-
+  lastnameId: string = "lastname";
+  isActiveStudent: boolean = true;
+  dateOfBirth: any;
 }

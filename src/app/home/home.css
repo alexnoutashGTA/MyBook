@@ -14,7 +14,6 @@
     grid-column: 1;
   }
 }
-
 /* medium: 2-column grid */
 @media (min-width: 641px) and (max-width: 1024px) {
   .container {
@@ -29,7 +28,7 @@
   .container {
     border: 1px dashed;
     display: grid;
-    grid-row: 1;
+    grid-template-rows: repeat(12, 200px);
   }
 }
 @media only screen and (min-width: 1281px) {

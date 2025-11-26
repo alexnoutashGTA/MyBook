@@ -14,14 +14,7 @@
 /* small: 1 column centered */
 @media only screen and (max-width: 640px) {
   .hello {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .boxStyle {
-    width: 90%;
-    max-width: 300px;
+    display: grid;
   }
 }
 
@@ -29,25 +22,22 @@
 @media (min-width: 641px) and (max-width: 1024px) {
   .hello {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .boxStyle {
-    width: 100%; /* fill the grid cell */
-    max-width: none;
   }
 }
 
 /* large+: horizontal rows with wrapping */
 @media only screen and (min-width: 1025px) {
   .hello {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    display: grid;
   }
   .boxStyle {
-    flex: 0 1 150px; /* shrink as needed, keep base size */
-    width: 150px;
+    width: 90%;
+    max-width: 300px;
   }
+}
+
+.container {
+  border: 1px dashed;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }

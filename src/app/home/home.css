@@ -9,12 +9,14 @@
 }
 
 .parent{
-  position: relative;
+  position: absolute;
   background-color: lightpink;
 }
 
 .grandma{
-  position: relative;
+  position: static;
   background-color: red;
+  width: 400px;
+  height: 500px;
 }
 

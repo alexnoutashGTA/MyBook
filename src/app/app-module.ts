@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {provideHttpClient} from '@angular/common/http';
 import { Messages } from './messages/messages';
 import { Home } from './home/home';
+import { ComponentName } from './component-name/component-name';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { Home } from './home/home';
     SideMenu,
     Messages,
     Home,
+    ComponentName,
   ],
   imports: [
     BrowserModule,

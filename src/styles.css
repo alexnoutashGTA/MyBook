@@ -1,1 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
+/* Container for the entire home component */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header styles */
+.home-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Boxes container using flex */
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* space between boxes */
+}
+
+/* Individual boxes */
+.box {
+  width: 250px;
+  height: 150px;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Breadcrumb menu */
+.breadcrumb {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* =========================== */
+/* Responsive Layout */
+/* =========================== */
+
+/* Mobile: <= 640px */
+@media only screen and (max-width: 640px) {
+  .boxes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .breadcrumb {
+    display: none; /* hide breadcrumb */
+  }
+}
+
+/* Medium screens: 641px - 1024px */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .boxes-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box {
+    width: 45%; /* two columns */
+  }
+  .breadcrumb {
+    display: none;
+  }
+}
+
+/* Large screens: 1025px - 1280px */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .boxes-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .box {
+    width: 250px;
+  }
+  .breadcrumb {
+    display: block;
+  }
+}
+
+/* Very large screens: >1281px */
+@media only screen and (min-width: 1281px) {
+  .boxes-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .box {
+    width: 250px;
+  }
+  .breadcrumb {
+    display: block;
+  }
+}

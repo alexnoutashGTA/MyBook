@@ -1,49 +1,58 @@
-.boxStyle {
-  box-sizing: border-box;
-  width: 150px;
-  height: 100px;
-  display: flex;
+.box{
+  height: 125px;
+  width: 125px;
+  background-color: yellowgreen;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  background: #ff0000;
-  flex: 0 1 150px;
-  min-width: 0;
+  margin: 20px auto;
 }
+
+
+
 
 @media only screen and (max-width: 640px) {
-  .hello {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .boxStyle {
-    width: 90%;
-    max-width: 300px;
-  }
+  .container {
+    border: 1px dashed;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
+}
+
+
+
 
 @media (min-width: 641px) and (max-width: 1024px) {
-  .hello {
+  .container {
+    border: 1px dashed;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .boxStyle {
-    width: 100%; /* fill the grid cell */
-    max-width: none;
-  }
+    gap: 1rem;
+}
 }
 
-@media only screen and (min-width: 1025px) {
-  .hello {
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1680px) {
+  .container {
+    border: 1px dashed;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  .boxStyle {
-    flex: 0 1 150px;
-    width: 150px;}
+    gap: 1rem;
 }
+}
+
+
+
+
+@media only screen and (min-width: 1281px) {
+  .container {
+    border: 1px dashed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+}
+

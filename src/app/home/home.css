@@ -26,6 +26,11 @@
 
 
 @media (max-width: 640px) {
+  #parent{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+  }
   .boxStyle{
     margin: auto;
   }
@@ -56,11 +61,11 @@
 
 @media only screen and (min-width: 1281px) {
   #parent{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    justify-items: center;
+    align-items: center;
     margin: auto;
     justify-content: center;
-    align-items: center;
+    align-content: center;
   }
 }

@@ -1,27 +1,30 @@
-.child {
+.boxStyle {
   position: relative;
-  color: gray;
+  color: red;
   margin: 10px;
   height: 150px;
   width: 150px;
   background-color: lightgrey;
-  padding: 100px;
+  display: inline-block;
 }
 
-.parent{
+.boxStyle3 {
+  position: relative;
+  color: red;
+  margin: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  opacity: 0.7;
+  display: inline-block;
+}
+
+#parent{
   position: absolute;
   background-color: lightpink;
+  text-wrap-mode: nowrap;
 }
 
-<<<<<<< HEAD
-.grandma{
-  position: static;
-  background-color: red;
-  width: 400px;
-  height: 500px;
-}
-
-=======
 
 @media only screen and (max-width: 640px) {
   .home-grid {
@@ -60,4 +63,3 @@
     display: block;
   }
 }
->>>>>>> 499444f (Home component CSS)

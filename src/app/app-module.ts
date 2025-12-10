@@ -7,6 +7,7 @@ import {BreadCrumbMenu} from './bread-crumb-menu/bread-crumb-menu';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {provideHttpClient} from '@angular/common/http';
 import { Messages } from './messages/messages';
+import { Home } from './home/home';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { Messages } from './messages/messages';
     App,
     SideMenu,
     Messages,
+    Home,
   ],
   imports: [
     BrowserModule,

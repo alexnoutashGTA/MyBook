@@ -1,1 +1,48 @@
-<p>messages works!</p>
+<h1>Send a message</h1>
+
+<!-- /* Example of Function Binding */ -->
+<form  (ngSubmit)="saveMessage()">
+
+<!--  <* Example of Interpolation Binding with double curly brackets (bind to a text value) *>-->
+  <!-- /* One way binding */ -->
+  <label for="firstname">{{firstNameLabel}}</label>
+<br>
+  <!-- /* Example of Model Binding with [()] (two way binding to a variable ) */ -->
+  <input type="text" placeholder="Enter firstname" id="firstname" name="firstname"
+       required [(ngModel)]="firstName">
+<br>
+<br>
+
+<label for="lastname">*Last Name</label>
+<br>
+  <!-- /* Example of Attribute Binding with [] (one way binding to a variable ) */ -->
+  <input type="text" placeholder="Enter lastname" [id]="lastnameId" name="lastname" required [(ngModel)]="lastName">
+<br>
+<br>
+
+<label for="phone number">Phone Number</label>
+<br>
+<input type="tel" placeholder="(***) ***-****" id="phonenumber" name="phonenumber" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" [(ngModel)]="phoneNumber">
+<br>
+<br>
+  <label for="password">Password</label>
+  <br>
+  <input id="password" type="password"  name="password"  [(ngModel)]="password">
+  <br>
+  <br>
+
+  <label for="isActiveStudent">Is Student Active</label>
+  <br>
+  <input id="isActiveStudent" type="checkbox"  name="isActiveStudent"  [(ngModel)]="isActiveStudent">
+  <br>
+  <br>
+
+  <label for="dateOfBirth">Date of birth</label>
+  <br>
+  <input id="dateOfBirth" type="date"  name="dateOfBirth"  [(ngModel)]="dateOfBirth">
+  <br>
+  <br>
+
+
+  <input type="submit" value="Send the message">
+</form>

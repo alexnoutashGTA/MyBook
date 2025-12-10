@@ -1,20 +1,14 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import {Messages} from './messages/messages';
-import {Home} from './home/home';
+import { Routes, RouterModule } from '@angular/router';
+import { MessagesComponent } from './messages/messages.component'; // Correct import path
 
+const routes: Routes = [
+  { path: 'messages', component: MessagesComponent },
+  // other routes can be added here
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot([
-    {
-      path: '',
-      component: Home,
-    },
-    {
-      path: 'messages',
-      component: Messages,
-    }
-  ])],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

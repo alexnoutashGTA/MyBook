@@ -1,0 +1,16 @@
+<div class="home-wrapper">
+
+  <!-- breadcrumb area (if you have one) -->
+  <div class="breadcrumb" id="breadcrumb">
+    <!-- your breadcrumb html here -->
+  </div>
+
+  <div class="home-grid">
+    <!-- Put all your boxes/cards here -->
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+  </div>
+
+</div>

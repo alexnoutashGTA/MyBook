@@ -1,5 +1,5 @@
 .box{
-  height: 100%;
+  height: calc(100vw * 9 / 16);
   width: 100%;
   background-color: pink;
   text-align: center;

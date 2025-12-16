@@ -6,8 +6,6 @@
   /*100 vw = viewport = width of the size*/
   width: 95vw;
   max-width: 95vw;
-  height: 98vh;
-  max-height: 98vh;
 }
 
 .element::-webkit-scrollbar {

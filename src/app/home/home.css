@@ -1,35 +1,38 @@
 .child {
-  position: relative;
   color: gray;
-  margin: 10px;
   height: 150px;
   width: 150px;
   background-color: lightgrey;
-  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.parent{
-  position: absolute;
+.parent {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
   background-color: lightpink;
+  padding: 20px;
 }
 
-.grandma{
-  position: static;
+.grandma {
   background-color: red;
-  width: 400px;
-  height: 500px;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 640px) {
-  .child {
-    width: 100%;
-    max-width: 300px;
+  .parent {
+    grid-template-columns: 1fr;
   }
 }
-
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  .child {
-    width: calc(50% - 20px);
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .breadcrumb {
@@ -37,9 +40,10 @@
   }
 }
 
+
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  .child {
-    width: 150px;
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .breadcrumb {
@@ -48,8 +52,8 @@
 }
 
 @media only screen and (min-width: 1281px) {
-  .child {
-    width: 150px;
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .breadcrumb {

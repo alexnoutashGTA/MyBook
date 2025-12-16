@@ -1,14 +1,24 @@
-
+* {
+  box-sizing: border-box;
+}
 .main_app_frame{
   display: block;
   /*100 vw = viewport = width of the size*/
   width: 90vw;
   max-width: 90vw;
+  height: 90vh;
+  max-height: 90vh;
 }
 
 .element::-webkit-scrollbar {
   display: none;
 }
+
+/*override default margin of the body element*/
+body{
+  margin: 0;
+}
+
 /*
 .main-body{
   padding: 50px;

@@ -1,26 +1,26 @@
 .child {
-  width: 150px;
+  color: gray;
   height: 150px;
+  width: 150px;
   background-color: lightgrey;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
 }
 
 .parent {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;       
+  align-items: center;
   background-color: lightpink;
   padding: 20px;
 }
 
 .grandma {
-  width: 100%;
-  min-height: 500px;
   background-color: red;
+  width: 100%;
+  min-height: 400px;
   display: flex;
   justify-content: center;
 }
@@ -30,7 +30,6 @@
     flex-direction: column;
   }
 }
-
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   .parent {
     flex-direction: row;
@@ -57,8 +56,6 @@
     display: block;
   }
 }
-
-
 @media only screen and (min-width: 1281px) {
   .parent {
     flex-direction: row;

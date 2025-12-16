@@ -4,10 +4,10 @@
 .main_app_frame{
   display: block;
   /*100 vw = viewport = width of the size*/
-  width: 90vw;
-  max-width: 90vw;
-  height: 90vh;
-  max-height: 90vh;
+  width: 95vw;
+  max-width: 95vw;
+  height: 98vh;
+  max-height: 98vh;
 }
 
 .element::-webkit-scrollbar {

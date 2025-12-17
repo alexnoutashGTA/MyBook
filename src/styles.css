@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --step--2: clamp(0.4375rem, 0.7996rem + -0.4672vw, 0.6944rem);
+  --step--1: clamp(0.8333rem, 0.8163rem + 0.0758vw, 0.875rem);
+  --step-0: clamp(1rem, 0.6932rem + 1.3636vw, 1.75rem);
+  --step-1: clamp(1.2rem, 0.2591rem + 4.1818vw, 3.5rem);
+  --step-2: clamp(1.44rem, -0.8345rem + 10.1091vw, 7rem);
+  --step-3: clamp(1.728rem, -3.2924rem + 22.3127vw, 14rem);
+  --step-4: clamp(2.0736rem, -8.5327rem + 47.1389vw, 28rem);
+  --step-5: clamp(2.4883rem, -19.4028rem + 97.294vw, 56rem);
+}

@@ -1,79 +1,47 @@
 .child {
-  position: relative;
   color: gray;
-  margin: 10px;
   height: 150px;
   width: 150px;
   background-color: lightgrey;
-  padding: 100px;
-}
-
-.parent{
-  position: absolute;
-  background-color: lightpink;
-}
-
-.grandma{
-  position: static;
-  background-color: red;
-  width: 400px;
-  height: 500px;
-}
-
-/* Default layout for large screens */
-.home-flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent {
+  display: grid;
   gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  background-color: lightpink;
   padding: 20px;
 }
 
-.box {
-  background: #5a9;
-  padding: 25px;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  width: 200px;
-}
-
-/* Breadcrumb default visible */
-.breadcrumb {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: bold;
+.grandma {
+  background-color: red;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 640px) {
-  .home-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .breadcrumb {
-    display: none;
+  .parent {
+    grid-template-columns: 1fr;
   }
 }
-
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  .home-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .breadcrumb {
     display: none;
   }
 }
-
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  .home-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .breadcrumb {
@@ -82,10 +50,8 @@
 }
 
 @media only screen and (min-width: 1281px) {
-  .home-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .breadcrumb {

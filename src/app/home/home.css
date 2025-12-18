@@ -1,50 +1,61 @@
-.box{
-  height: 100%;
-  width: 100%;
-  background-color: pink;
-  text-align: center;
+.child {
+  color: gray;
+  height: 150px;
+  width: 150px;
+  background-color: lightgrey;
+  display: flex;
   align-items: center;
-  margin: auto;
+  justify-content: center;
 }
 
+.parent {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  background-color: lightpink;
+  padding: 20px;
+}
+
+.grandma {
+  background-color: red;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+}
 
 @media only screen and (max-width: 640px) {
-  .container {
-    border: 1px dashed;
-    display: grid;
+  .parent {
     grid-template-columns: 1fr;
-    justify-items: center;
   }
 }
-
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  .container {
-    border: 1px dashed;
-    display: grid;
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .parent {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  }
+
+  .breadcrumb {
+    display: none;
   }
 }
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-
-@media only screen and (min-width: 1025px) and (max-width: 1680px) {
-  .container {
-    border: 1px dashed;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  .breadcrumb {
+    display: block;
   }
 }
-
 
 @media only screen and (min-width: 1281px) {
-  .container {
-    border: 1px dashed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 1rem;
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .breadcrumb {
+    display: block;
   }
 }
 

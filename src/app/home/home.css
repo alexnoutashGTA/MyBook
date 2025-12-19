@@ -1,51 +1,47 @@
-.boxStyle {
-  position: relative;
-  color: red;
-  margin: 10px;
+.child {
+  color: gray;
   height: 150px;
   width: 150px;
   background-color: lightgrey;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.boxStyle3 {
-  position: relative;
-  color: red;
-  margin: 10px;
-  height: 150px;
-  width: 150px;
-  background-color: black;
-  opacity: 0.7;
-  display: inline-block;
-}
-
-#parent{
-  position: absolute;
+.parent {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
   background-color: lightpink;
-  text-wrap-mode: nowrap;
+  padding: 20px;
 }
 
+.grandma {
+  background-color: red;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+}
 
 @media only screen and (max-width: 640px) {
-  .child {
-    width: 100%;
-    max-width: 300px;
+  .parent {
+    grid-template-columns: 1fr;
   }
 }
-
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  .child {
-    width: calc(50% - 20px);
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .breadcrumb {
     display: none;
   }
 }
-
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  .child {
-    width: 150px;
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .breadcrumb {
@@ -54,8 +50,8 @@
 }
 
 @media only screen and (min-width: 1281px) {
-  .child {
-    width: 150px;
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .breadcrumb {

@@ -48,3 +48,11 @@
   }
 }
 
+/* first of 3 prefered way to center text. */
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-wrap: nowrap;
+}

@@ -1,19 +1,22 @@
-.box{
-  height: calc(100vw * 9 / 16);
-  width: 100%;
-  background-color: pink;
-  text-align: center;
-  align-items: center;
-  margin: auto;
-}
 
+.container{
+  height: 100vh;
+}
+.box{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background-color: lightyellow;
+  border: 3px solid lightgrey;
+  place-content: center;
+}
 
 @media only screen and (max-width: 640px) {
   .container {
     border: 1px dashed;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
+    place-items: center;
   }
 }
 
@@ -48,11 +51,4 @@
   }
 }
 
-/* first of 3 prefered way to center text. */
-div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-wrap: nowrap;
-}
+

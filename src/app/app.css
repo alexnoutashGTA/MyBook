@@ -15,6 +15,7 @@
 /*override default margin of the body element*/
 body{
   margin: 0;
+  height: 100vh;
 }
 
 /*

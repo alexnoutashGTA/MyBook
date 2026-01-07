@@ -7,16 +7,7 @@
   width: 100%;
   display: grid;
   background-color: lightyellow;
-  border: 3px solid lightgrey;
   place-content: center;
-  margin: 2px;
-}
-
-#inner{
-  height: 50px;
-  width: 50px;
-  margin: auto;
-  border: 1px solid lightgrey;
 }
 
 @media only screen and (max-width: 640px) {

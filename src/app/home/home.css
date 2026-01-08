@@ -2,17 +2,17 @@
 .container{
   height: 100vh;
 }
+
 .box{
+  border: 1px gray solid;
   height: 100%;
   width: 100%;
   display: grid;
-  background-color: lightyellow;
   place-content: center;
 }
 
 @media only screen and (max-width: 640px) {
   .container {
-    border: 1px dashed;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -22,17 +22,14 @@
 
 @media (min-width: 641px) and (max-width: 1024px) {
   .container {
-    border: 1px dashed;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
   }
 }
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1680px) {
   .container {
-    border: 1px dashed;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -42,7 +39,6 @@
 
 @media only screen and (min-width: 1281px) {
   .container {
-    border: 1px dashed;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

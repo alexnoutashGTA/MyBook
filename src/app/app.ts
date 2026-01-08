@@ -25,10 +25,7 @@ export class App implements OnInit {
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
       // Send pageview event to Google Analytics
-      gtag('event', 'page_view', {
-        page_path: event.urlAfterRedirects,
-        page_title: this.getPageTitle(event.urlAfterRedirects) // Implement logic to get dynamic page title
-      });
+
     });
   }
   private getPageTitle(url: string): string {

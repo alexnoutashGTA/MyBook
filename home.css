@@ -8,12 +8,9 @@
 
 .main-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 12rem);
     gap: 1.5rem;
-    width: 75%;
-    height: 16rem;
 }
-
 
 .box {
     display: flex;
@@ -22,8 +19,9 @@
     color: white;
     font-size: 1.25rem;
     font-weight: bold;
+    height: 8rem;
+    border-radius: 0.5rem;
 }
-
 
 .red-box {
     background-color: #ef4444;

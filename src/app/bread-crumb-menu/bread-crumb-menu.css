@@ -1,0 +1,70 @@
+.bread-crumb-list{
+  display: inline-block;
+  flex-direction: row;
+  background-color: #333;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 60px;
+  transition: all 0.3s;
+
+  ul{
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    &:hover {
+      background-color: gray;
+    }
+
+    span {
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+    li{
+      list-style-type: none; /* Remove bullets */
+      color: white;
+      margin-left: 20px;
+
+      a{
+        display: inline-block;
+        color: white;
+      }
+    }
+  }
+
+.bread-crumb{
+  color: purple;
+}
+
+/*Show the bread crumb menu for very small screens*/
+@media only screen and (max-width: 640px) {
+  .bread-crumb {
+    /*Will take the full width of the screen. It will create a newline before and after*/
+    display: block;
+  }
+}
+
+/*Show the bread crumb menu for medium screens*/
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .bread-crumb {
+    display: block;
+  }
+}
+
+/*Hide the bread crumb menu for large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .bread-crumb {
+    display: none;
+  }
+}
+
+/*Hide the bread crumb menu for very large screens*/
+@media only screen and (min-width: 1281px) {
+  .bread-crumb{
+    display: none;
+  }
+}
+

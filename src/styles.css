@@ -1,0 +1,86 @@
+/* Container for the entire home component */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header styles */
+.home-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Boxes container using Grid */
+.boxes-container {
+  display: grid;
+  gap: 20px;
+  justify-content: center; /* center boxes horizontally */
+  align-items: center;
+}
+
+/* Individual boxes */
+.box {
+  background-color: #d3d3d3;
+  padding: 40px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Breadcrumb menu */
+.breadcrumb {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* =========================== */
+/* Responsive Layout */
+/* =========================== */
+
+/* Mobile: <= 640px => 1 column */
+@media only screen and (max-width: 640px) {
+  .boxes-container {
+    grid-template-columns: 1fr;
+  }
+  .breadcrumb {
+    display: none; /* hide breadcrumb */
+  }
+}
+
+/* Medium screens: 641px - 1024px => 2 columns */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .boxes-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .breadcrumb {
+    display: none; /* hide breadcrumb */
+  }
+}
+
+/* Large screens: 1025px - 1280px => horizontal layout */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .boxes-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .breadcrumb {
+    display: block; /* show breadcrumb */
+  }
+}
+
+/* Very large screens: >1281px => horizontal layout */
+@media only screen and (min-width: 1281px) {
+  .boxes-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .breadcrumb {
+    display: block; /* show breadcrumb */
+  }
+}

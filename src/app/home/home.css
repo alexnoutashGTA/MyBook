@@ -1,0 +1,22 @@
+.child {
+  position: relative;
+  color: gray;
+  margin: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: lightgrey;
+  padding: 100px;
+}
+
+.parent{
+  position: absolute;
+  background-color: lightpink;
+}
+
+.grandma{
+  position: static;
+  background-color: red;
+  width: 400px;
+  height: 500px;
+}
+
